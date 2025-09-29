@@ -1,35 +1,36 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+A saúde mental é uma necessidade de toda a sociedade, mas o acesso ao atendimento psicológico ainda é muito desigual. Muitas pessoas que não têm condições financeiras deixam de procurar ajuda, mesmo quando existem instituições que oferecem o serviço de forma gratuita ou com valores simbólicos.
+O problema é que essas informações ficam espalhadas e nem sempre chegam à população. Nosso projeto busca resolver isso criando um sistema simples, que reúna em um só lugar os serviços gratuitos disponíveis na região. Assim, qualquer pessoa poderá acessar e encontrar facilmente onde pode receber atendimento.
+
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+Grande parte da população que precisa de apoio psicológico não sabe onde buscar atendimento gratuito ou acessível. As informações ficam dispersas, faltam canais de divulgação e muitas instituições não têm ferramentas práticas para organizar seus atendimentos. Isso gera exclusão, demora e, em muitos casos, desistência da busca por ajuda.
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O projeto tem como objetivo principal desenvolver uma aplicação web que:
+Reúna informações de instituições que oferecem atendimento psicológico gratuito ou de baixo custo;
+
+
+Permita a visualização da disponibilidade e dados de contato dessas instituições;
+
+
+Auxilie na organização das filas de espera e inscrições;
+
+
+Simplifique o acesso para que a população em geral consiga encontrar ajuda de forma rápida.
+
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+A Organização Mundial da Saúde aponta que os transtornos de ansiedade e depressão são uma das principais causas de afastamento e queda de produtividade no mundo. No Brasil, esses números são ainda mais preocupantes diante das dificuldades econômicas e da falta de acesso à saúde mental pelo sistema público.
+Muitas universidades e clínicas-escola oferecem atendimento gratuito, mas a população em geral desconhece essa possibilidade. Nosso projeto vem como resposta a essa lacuna, funcionando como um ponto central de informação e acesso. Com isso, buscamos ampliar a visibilidade desses serviços e garantir que mais pessoas tenham a oportunidade de receber apoio psicológico.
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
-
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+Cidadãos em situação de vulnerabilidade ou com dificuldade de acesso à saúde mental, que precisam localizar atendimento gratuito ou acessível.
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-
+Instituições de ensino, ONGs e clínicas-escola, que oferecem esse tipo de serviço e precisam de mais visibilidade.

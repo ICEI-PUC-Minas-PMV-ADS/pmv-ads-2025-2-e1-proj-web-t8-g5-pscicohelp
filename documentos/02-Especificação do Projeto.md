@@ -1,8 +1,25 @@
 # Especificação do Projeto
 
+## Público-Alvo
+
+O público-alvo deste projeto é composto por:
+
+- **Cidadãos em situação de vulnerabilidade ou com dificuldade de acesso à saúde mental**, que necessitam localizar atendimento psicológico gratuito ou acessível.  
+- **Instituições de ensino, ONGs, clínicas-escola e centros comunitários**, que oferecem esse tipo de serviço e precisam ampliar sua visibilidade.  
+
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
+Perfil 1 – Pessoa da Comunidade  
+Descrição: Qualquer cidadão em busca de atendimento psicológico acessível.  
+Necessidades: Localizar instituições, verificar vagas disponíveis, se inscrever para atendimento.  
+
+Perfil 2 – Instituição de Atendimento  
+Descrição: Clínicas-escola, universidades, ONGs ou centros comunitários.  
+Necessidades: Divulgar seus serviços, cadastrar vagas e organizar atendimentos.  
+
+Perfil 3 – Administrador  
+Descrição: Responsável pelo gerenciamento geral da plataforma.  
+Necessidades: Validar cadastros e manter o sistema atualizado.  
 
 <table>
 <tbody>
@@ -19,7 +36,6 @@
 </tr>
 </tbody>
 </table>
-
 
 ## Histórias de Usuários
 
@@ -48,7 +64,7 @@
 | RF-01 |  ...                    | ...   | 
 |  ...  |  ...                    | ...   |
 
-**Prioridade: Alta / Média / Baixa. 
+**Prioridade: Alta / Média / Baixa.**
 
 ### Requisitos não Funcionais
 
@@ -59,5 +75,4 @@
 | RNF-01 |  ...                    | ...   | 
 | ...    |  ...                    | ...   | 
 
-**Prioridade: Alta / Média / Baixa. 
-
+**Prioridade: Alta / Média / Baixa.**

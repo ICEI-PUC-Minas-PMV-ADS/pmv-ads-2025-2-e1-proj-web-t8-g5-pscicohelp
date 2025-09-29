@@ -1,7 +1,5 @@
 # Referências Bibliográficas
 
-[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
+AMARAL, Daniel; FLEURY, Afonso; ISONI, Marcelo. **Scrum: gestão ágil para projetos de sucesso**. São Paulo: Atlas, 2019.  
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+ORGANIZAÇÃO MUNDIAL DA SAÚDE – OMS. **Depression and Other Common Mental Disorders: Global Health Estimates**. Geneva: World Health Organization, 2017. Disponível em: <https://www.who.int/>. Acesso em: 28 set. 2025.  
