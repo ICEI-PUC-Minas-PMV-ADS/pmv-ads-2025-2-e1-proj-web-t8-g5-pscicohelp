@@ -1,0 +1,112 @@
+:root{ 
+    --bg-page: #D7DCCF;      /* verde acinzentado do fundo */ 
+    --card:    #F6F0E9;      /* creme do painel */ 
+    --border:  #CFC6BA;      /* bege da borda */ 
+    --text:    #2B2B2B;      /* cinza quase preto */ 
+} 
+
+/* reset mínimo */ 
+* { box-sizing: border-box; } 
+html, body { height: 100%; } 
+body { 
+    margin: 0; 
+    background: var(--bg-page); 
+    color: var(--text); 
+    font: 16px/1.4 "Cormorant Garamond", Georgia, "Times New Roman", serif; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+} 
+
+.wrap { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 32px 20px; 
+    min-height: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr 560px; 
+    gap: 32px; 
+    align-items: center; 
+} 
+
+/* bloco do logo/texto à esquerda */ 
+.brand { 
+    display: grid; 
+    gap: 20px; 
+    align-content: center; 
+    justify-items: start; 
+    min-height: 380px; 
+} 
+.logo-box { 
+    width: clamp(220px, 50%, 360px); 
+    height: 120px; 
+    display: grid; 
+    place-items: center; 
+    border: 1.5px solid var(--border); 
+    background: transparent; 
+    border-radius: 10px; 
+    color: var(--text); 
+    letter-spacing: .5px; 
+    font-weight: 500; 
+    text-transform: lowercase; 
+} 
+.subtitle { 
+    letter-spacing: .35em; 
+    text-transform: uppercase; 
+    font-size: 14px; 
+    opacity: .9; 
+} 
+
+/* painel com os botões à direita */ 
+.panel { 
+    background: var(--card); 
+    border-radius: 12px; 
+    padding: 28px; 
+    outline: 1.5px solid rgba(0,0,0,0.06); 
+} 
+.stack { display: grid; gap: 18px; } 
+
+/* botão estilo “quadradinho” */ 
+.btn { 
+    display: grid; 
+    place-items: center; 
+    height: 64px; 
+    border: 1.5px solid var(--border); 
+    border-radius: 10px; 
+    background: rgba(255,255,255,0.3); 
+    color: var(--text); 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: 500; 
+    letter-spacing: .2px; 
+    transition: transform .06s ease, box-shadow .2s ease, background .2s ease; 
+} 
+.btn:hover { box-shadow: 0 1.5px 0 rgba(0,0,0,.05); background: rgba(255,255,255,0.45); } 
+.btn:active { transform: translateY(1px); } 
+
+/* rodapé do painel (ícones/links) */ 
+.panel-footer { 
+    display: grid; 
+    place-items: center; 
+    margin-top: 22px; 
+} 
+.social { 
+    width: 38px; height: 38px; 
+    border: 1.5px solid var(--border); 
+    border-radius: 10px; 
+    display: grid; 
+    place-items: center; 
+    text-decoration: none; 
+    color: var(--text); 
+    font-size: 20px; 
+    line-height: 0; 
+} 
+
+/* responsivo */ 
+@media (max-width: 980px){ 
+    .wrap { 
+    grid-template-columns: 1fr; 
+    gap: 24px; 
+    } 
+    .brand { min-height: 0; } 
+    .panel { max-width: 640px; margin: 0 auto; } 
+} 
