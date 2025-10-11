@@ -1,25 +1,26 @@
-# Título do Projeto
+# PscicoHelp
 
-`CURSO`
+`Analise e desinvolvimento de sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`Eixo-1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+A saúde mental é uma necessidade de toda a sociedade, mas o acesso ao atendimento psicológico ainda é muito desigual. Muitas pessoas que não têm condições financeiras deixam de procurar ajuda, mesmo quando existem instituições que oferecem o serviço de forma gratuita ou com valores simbólicos.
+O problema é que essas informações ficam espalhadas e nem sempre chegam à população. Nosso projeto busca resolver isso criando um sistema simples, que reúna em um só lugar os serviços gratuitos disponíveis na região. Assim, qualquer pessoa poderá acessar e encontrar facilmente onde pode receber atendimento.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Luiz Alberto Ferreira Gomes
+* Adriana Camurça Lima
+* Gabriel Campos Seno
+* Mariana Santos
+
 
 ## Orientador
 
-* Nome completo do professor
+ Luiz Alberto Ferreira Gomes
 
 # Documentação
 
