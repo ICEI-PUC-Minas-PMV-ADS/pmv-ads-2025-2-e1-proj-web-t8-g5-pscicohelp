@@ -66,10 +66,12 @@ O público-alvo deste projeto é composto por:
 
 [Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
 
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
-|--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|EU COMO... `QUEM`         | QUERO/PRECISO ... `O QUE`                                  |PARA ... `PORQUE`                                                             |
+|--------------------------|------------------------------------------------------------|------------------------------------------------------------------------------|
+|Pessoa da Comunidade      | pesquisar instituições de atendimento psicológico gratuito | encontrar ajuda de forma rápida e prática.                                   |
+|Instituição de Atendimento| tualizar o número de vagas em tempo real                   |manter as informações sempre confiáveis e atuais.                             |
+|Administrador             |validar os cadastros das instituições                       | garantir que apenas serviços confiáveis estejam disponíveis na plataforma.   |
+
 
 ## Requisitos do Projeto
 
