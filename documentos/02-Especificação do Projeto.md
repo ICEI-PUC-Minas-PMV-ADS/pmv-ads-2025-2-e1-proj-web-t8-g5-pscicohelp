@@ -9,30 +9,50 @@ O público-alvo deste projeto é composto por:
 
 ## Perfis de Usuários
 
-Perfil 1 – Pessoa da Comunidade  
-Descrição: Qualquer cidadão em busca de atendimento psicológico acessível.  
-Necessidades: Localizar instituições, verificar vagas disponíveis, se inscrever para atendimento.  
-
-Perfil 2 – Instituição de Atendimento  
-Descrição: Clínicas-escola, universidades, ONGs ou centros comunitários.  
-Necessidades: Divulgar seus serviços, cadastrar vagas e organizar atendimentos.  
-
-Perfil 3 – Administrador  
-Descrição: Responsável pelo gerenciamento geral da plataforma.  
-Necessidades: Validar cadastros e manter o sistema atualizado.  
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Pessoa da Comunidade </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Qualquer cidadão em busca de atendimento psicológico acessível.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Localizar instituições, verificar vagas disponíveis, se inscrever para atendimento.  </td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Administrador </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Responsável pelo gerenciamento geral da plataforma</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>Validar cadastros e manter o sistema atualizado.</td>
+</tr>  
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Instituição de Atendimento  </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Responsável pelo gerenciamento geral da plataforma.</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Divulgar seus serviços, cadastrar vagas e organizar atendimentos. </td>
 </tr>
 </tbody>
 </table>
@@ -61,8 +81,13 @@ Necessidades: Validar cadastros e manter o sistema atualizado.
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+| RF-01 |      Permitir cadastro de instituições de atendimento.                        |  alta | 
+| RF-02 |  Permitir cadastro de pessoas interessadas.                                   | alta  |
+| RF-03 | Exibir lista de instituições disponíveis, com informações de vagas e contatos.| alta  |
+| RF-04 |  Permitir cadastro de pessoas interessadas.                                   | alta  |
+| RF-05| Permitir que instituições atualizem status de atendimento e disponibilidade.   | alta  |
+
+
 
 **Prioridade: Alta / Média / Baixa.**
 
@@ -72,7 +97,10 @@ Necessidades: Validar cadastros e manter o sistema atualizado.
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+| RNF-01 | O sistema deve funcionar em navegadores modernos.                          | alta  | 
+| RNF-02 | A interface deve ser simples e de fácil compreensão para qualquer pessoa.  | alta  | 
+| RNF-03 | O sistema deve garantir segurança no acesso e proteção de dados.           | alta  | 
+| RNF-04 | O tempo de resposta deve ser rápido para boa experiência do usuário.       | alta  | 
+
 
 **Prioridade: Alta / Média / Baixa.**
