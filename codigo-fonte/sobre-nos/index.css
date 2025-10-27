@@ -1,0 +1,144 @@
+:root {
+    --bg-page: #d7dccf;
+    --card: #f6f0e9;
+    --border: #cfc6ba;
+    --text: #2b2b2b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: var(--bg-page);
+    color: var(--text);
+    font: 16px/1.5 'Inter', 'Cormorant Garamond', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.site-header {
+    background: var(--card);
+    border-bottom: 1.5px solid var(--border);
+    padding: 18px 0 8px 0;
+    margin-bottom: 32px;
+}
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text);
+    margin: 0;
+}
+.nav {
+    margin-top: 8px;
+}
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 18px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.nav a:hover {
+    color: #4b6e4b;
+}
+
+.hero {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 28px 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.hero h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.cards article {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 18px 16px;
+    flex: 1 1 220px;
+    min-width: 200px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.cards h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.cards ul {
+    padding-left: 18px;
+}
+
+.team {
+    margin-bottom: 32px;
+}
+.team-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.member {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 16px 12px;
+    text-align: center;
+    flex: 1 1 180px;
+    min-width: 160px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.avatar {
+    width: 48px;
+    height: 48px;
+    background: #b7cbb7;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto 8px auto;
+}
+
+.contact {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 18px 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.contact a {
+    color: #4b6e4b;
+    text-decoration: underline;
+}
+
+.site-footer {
+    background: var(--card);
+    border-top: 1.5px solid var(--border);
+    text-align: center;
+    padding: 16px 0;
+    font-size: 0.95rem;
+    color: #888;
+    margin-top: 32px;
+}
