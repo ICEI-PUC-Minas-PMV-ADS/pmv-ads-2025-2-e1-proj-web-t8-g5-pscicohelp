@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Área - Psicohelp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-box">atendimento psicológico gratuito</div>
+    
+    <div class="header">
+      <div class="user-info">
+        <div class="avatar">MS</div>
+        <div class="user-details">
+          <h1>Maria Silva</h1>
+          <p>maria.silva@email.com • CPF: 123.456.789-00</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-icon" onclick="alert('Notificações')" title="Notificações">🔔</button>
+        <button class="btn-icon" onclick="alert('Configurações')" title="Configurações">⚙️</button>
+        <button class="btn-logout" onclick="if(confirm('Deseja sair?')) window.location.href='index.html'">Sair</button>
+      </div>
+    </div>
+    
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('visao-geral')">Visão Geral</button>
+      <button class="tab" onclick="switchTab('sessoes')">Minhas Sessões</button>
+      <button class="tab" onclick="switchTab('historico')">Histórico</button>
+      <button class="tab" onclick="switchTab('documentos')">Documentos</button>
+      <button class="tab" onclick="switchTab('dados')">Meus Dados</button>
+    </div>
+    
+    <div id="visao-geral" class="tab-content active">
+      <div class="grid">
+        <div class="card">
+          <h2>📊 Meu Status</h2>
+          <div class="info-row">
+            <span class="info-label">Situação:</span>
+            <span class="info-value">Em atendimento</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Instituição:</span>
+            <span class="info-value">UFMG - Psicologia</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Profissional:</span>
+            <span class="info-value">Dr. João Santos</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Início do tratamento:</span>
+            <span class="info-value">15/08/2025</span>
+          </div>
+          <span class="status-badge status-active">● Ativo</span>
+          
+          <div class="progress-bar-container">
+            <div class="progress-label">
+              <span>Progresso do tratamento</span>
+              <span><strong>8</strong> de 12 sessões</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 66.67%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h2>📅 Próxima Sessão</h2>
+          <div class="appointment-card">
+            <div class="appointment-date">Quinta-feira, 31/10</div>
+            <div class="appointment-time">15:00 - 16:00</div>
+            <div class="appointment-details">
+              📍 Modalidade: Online<br>
+              👨‍⚕️ Dr. João Santos<br>
+              💬 Sessão nº 9
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="alert('Abrindo sala virtual...')">🎥 Entrar na Sessão</button>
+          <button class="btn" onclick="openModal('modalReagendar')">📆 Reagendar</button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>🎯 Objetivos do Tratamento</h2>
+        <div class="info-row">
+          <span class="info-label">Principal foco:</span>
+          <span class="info-value">Ansiedade e autoestima</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Abordagem:</span>
+          <span class="info-value">Terapia Cognitivo-Comportamental (TCC)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duração estimada:</span>
+          <span class="info-value">3 meses (12 sessões)</span>
+        </div>
+        <button class="btn" onclick="alert('Visualizando plano terapêutico completo...')">Ver Plano Completo</button>
+      </div>
+    </div>
+    
+    <!-- TAB: Minhas Sessões -->
+    <div id="sessoes" class="tab-content">
+      <div class="card">
+        <h2>📅 Sessões Agendadas</h2>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">Quinta-feira, 31/10/2025 - 15:00</div>
+          <div class="appointment-item-details">Sessão 9 • Dr. João Santos • Online</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">Quinta-feira, 07/11/2025 - 15:00</div>
+          <div class="appointment-item-details">Sessão 10 • Dr. João Santos • Online</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">Quinta-feira, 14/11/2025 - 15:00</div>
+          <div class="appointment-item-details">Sessão 11 • Dr. João Santos • Online</div>
+        </div>
+        
+        <button class="btn btn-primary" onclick="openModal('modalAgendar')">➕ Agendar Nova Sessão</button>
+      </div>
+      
+      <div class="grid">
+        <div class="card">
+          <h2>ℹ️ Informações Importantes</h2>
+          <p style="color: #5a5a5a; margin: 0; line-height: 1.6;">
+            • Chegue 5 minutos antes da sessão online<br>
+            • Em caso de imprevisto, reagende com 24h de antecedência<br>
+            • Faltas sem justificativa podem resultar em desligamento<br>
+            • Mantenha câmera ligada durante as sessões
+          </p>
+        </div>
+        
+        <div class="card">
+          <h2>📊 Estatísticas</h2>
+          <div class="info-row">
+            <span class="info-label">Sessões realizadas:</span>
+            <span class="info-value">8</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Faltas:</span>
+            <span class="info-value">0</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Reagendamentos:</span>
+            <span class="info-value">1</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Taxa de presença:</span>
+            <span class="info-value" style="color: var(--success); font-weight: 600;">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="historico" class="tab-content">
+      <div class="card">
+        <h2>📝 Histórico de Atendimentos</h2>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">24/10/2025 - Concluída ✓</div>
+          <div class="appointment-item-details">Sessão 8 • Dr. João Santos • Online • Duração: 50min</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">17/10/2025 - Concluída ✓</div>
+          <div class="appointment-item-details">Sessão 7 • Dr. João Santos • Online • Duração: 50min</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">10/10/2025 - Concluída ✓</div>
+          <div class="appointment-item-details">Sessão 6 • Dr. João Santos • Presencial • Duração: 50min</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">03/10/2025 - Concluída ✓</div>
+          <div class="appointment-item-details">Sessão 5 • Dr. João Santos • Online • Duração: 50min</div>
+        </div>
+        
+        <div class="appointment-item">
+          <div class="appointment-item-date">26/09/2025 - Concluída ✓</div>
+          <div class="appointment-item-details">Sessão 4 • Dr. João Santos • Online • Duração: 50min</div>
+        </div>
+        
+        <button class="btn" onclick="alert('Exportando histórico completo...')">📥 Exportar Histórico (PDF)</button>
+      </div>
+      
+      <div class="card">
+        <h2>⭐ Avalie seu Atendimento</h2>
+        <p style="color: #5a5a5a; margin-bottom: 20px;">
+          Sua opinião é fundamental para melhorarmos nossos serviços. Como você avalia seu tratamento até agora?
+        </p>
+        <button class="btn btn-primary" onclick="openModal('modalAvaliacao')">Avaliar Atendimento</button>
+      </div>
+    </div>
+    
+    <div id="documentos" class="tab-content">
+      <div class="card">
+        <h2>📄 Meus Documentos</h2>
+        
+        <div class="document-item">
+          <div class="document-info">
+            <div class="document-icon">📋</div>
+            <div>
+              <div class="document-name">Termo de Consentimento</div>
+              <div class="document-date">Enviado em 15/08/2025</div>
+            </div>
+          </div>
+          <button class="btn btn-small" onclick="alert('Baixando documento...')">Baixar</button>
+        </div>
+        
+        <div class="document-item">
+          <div class="document-info">
+            <div class="document-icon">🆔</div>
+            <div>
+              <div class="document-name">RG - Frente e Verso</div>
+              <div class="document-date">Enviado em 15/08/2025</div>
+            </div>
+          </div>
+          <button class="btn btn-small" onclick="alert('Baixando documento...')">Baixar</button>
+        </div>
+        
+        <div class="document-item">
+          <div class="document-info">
+            <div class="document-icon">📝</div>
+            <div>
+              <div class="document-name">Comprovante de Residência</div>
+              <div class="document-date">Enviado em 15/08/2025</div>
+            </div>
+          </div>
+          <button class="btn btn-small" onclick="alert('Baixando documento...')">Baixar</button>
+        </div>
+        
+        <button class="btn btn-primary" onclick="openModal('modalUpload')">📤 Enviar Novo Documento</button>
+      </div>
+      
+      <div class="card">
+        <h2>📊 Relatórios e Atestados</h2>
+        <div class="empty-state">
+          <div class="empty-state-icon">📋</div>
+          <p>Nenhum relatório disponível no momento.<br>Relatórios serão gerados pelo seu terapeuta.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="dados" class="tab-content">
+      <div class="card">
+        <h2>👤 Dados Pessoais</h2>
+        <form onsubmit="event.preventDefault(); alert('Dados atualizados com sucesso!');">
+          <div class="form-group">
+            <label for="edit-nome">Nome completo</label>
+            <input type="text" id="edit-nome" value="Maria Silva" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-email">E-mail</label>
+            <input type="email" id="edit-email" value="maria.silva@email.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-telefone">Telefone</label>
+            <input type="tel" id="edit-telefone" value="(31) 98765-4321" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-cpf">CPF</label>
+            <input type="text" id="edit-cpf" value="123.456.789-00" disabled>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-data">Data de nascimento</label>
+            <input type="date" id="edit-data" value="1990-03-15" disabled>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">💾 Salvar Alterações</button>
+        </form>
+      </div>
+      
+      <div class="card">
+        <h2>🏠 Endereço</h2>
+        <form onsubmit="event.preventDefault(); alert('Endereço atualizado!');">
+          <div class="form-group">
+            <label for="edit-estado">Estado</label>
+            <select id="edit-estado">
+              <option value="mg" selected>Minas Gerais</option>
+              <option value="es">Espírito Santo</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="sp">São Paulo</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-cidade">Cidade</label>
+            <input type="text" id="edit-cidade" value="Belo Horizonte" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="edit-bairro">Bairro</label>
+            <input type="text" id="edit-bairro" value="Centro">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">💾 Salvar Alterações</button>
+        </form>
+      </div>
+      
+      <div class="card">
+        <h2>🔒 Segurança</h2>
+        <button class="btn" onclick="openModal('modalSenha')">🔑 Alterar Senha</button>
+        <button class="btn" onclick="if(confirm('Deseja realmente desativar sua conta?')) alert('Conta desativada')">❌ Desativar Conta</button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalReagendar" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📆 Reagendar Sessão</h3>
+        <button class="btn-close" onclick="closeModal('modalReagendar')">&times;</button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Sessão reagendada!'); closeModal('modalReagendar');">
+        <div class="form-group">
+          <label for="reagendar-data">Nova data</label>
+          <input type="date" id="reagendar-data" required>
+        </div>
+        <div class="form-group">
+          <label for="reagendar-horario">Horário</label>
+          <select id="reagendar-horario" required>
+            <option value="">Selecione</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="reagendar-motivo">Motivo do reagendamento</label>
+          <textarea id="reagendar-motivo" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmar Reagendamento</button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="modalAgendar" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📅 Agendar Nova Sessão</h3>
+        <button class="btn-close" onclick="closeModal('modalAgendar')">&times;</button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Sessão agendada!'); closeModal('modalAgendar');">
+        <div class="form-group">
+          <label for="agendar-data">Data</label>
+          <input type="date" id="agendar-data" required>
+        </div>
+        <div class="form-group">
+          <label for="agendar-horario">Horário</label>
+          <select id="agendar-horario" required>
+            <option value="">Selecione</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="agendar-modalidade">Modalidade</label>
+          <select id="agendar-modalidade" required>
+            <option value="">Selecione</option>
+            <option value="online">Online</option>
+            <option value="presencial">Presencial</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="modalAvaliacao" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>⭐ Avaliar Atendimento</h3>
+        <button class="btn-close" onclick="closeModal('modalAvaliacao')">&times;</button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Obrigado pela sua avaliação!'); closeModal('modalAvaliacao');">
+        <p style="text-align: center; color: #5a5a5a; margin-bottom: 10px;">Como você avalia seu atendimento?</p>
+        <div class="rating">
+          <span class="star" onclick="setRating(1)">⭐</span>
+          <span class="star" onclick="setRating(2)">⭐</span>
+          <span class="star" onclick="setRating(3)">⭐</span>
+          <span class="star" onclick="setRating(4)">⭐</span>
+          <span class="star" onclick="setRating(5)">⭐</span>
+        </div>
+        <div class="form-group">
+          <label for="avaliacao-comentario">Comentário (opcional)</label>
+          <textarea id="avaliacao-comentario" placeholder="Conte-nos sobre sua experiência..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="modalUpload" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>📤 Enviar Documento</h3>
+        <button class="btn-close" onclick="closeModal('modalUpload')">&times;</button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Documento enviado!'); closeModal('modalUpload');">
+        <div class="form-group">
+          <label for="upload-tipo">Tipo de documento</label>
+          <select id="upload-tipo" required>
+            <option value="">Selecione</option>
+            <option value="rg">RG</option>
+            <option value="cpf">CPF</option>
+            <option value="comprovante">Comprovante de Residência</option>
+            <option value="atestado">Atestado Médico</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="upload-arquivo">Arquivo (PDF, JPG ou PNG - máx 5MB)</label>
+          <input type="file" id="upload-arquivo" accept=".pdf,.jpg,.jpeg,.png" required style="padding: 10px;">
+        </div>
+        <div class="form-group">
+          <label for="upload-observacao">Observação</label>
+          <textarea id="upload-observacao" placeholder="Adicione informações sobre o documento"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Documento</button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="modalSenha" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>🔑 Alterar Senha</h3>
+        <button class="btn-close" onclick="closeModal('modalSenha')">&times;</button>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Senha alterada com sucesso!'); closeModal('modalSenha');">
+        <div class="form-group">
+          <label for="senha-atual">Senha atual</label>
+          <input type="password" id="senha-atual" required>
+        </div>
+        <div class="form-group">
+          <label for="senha-nova">Nova senha</label>
+          <input type="password" id="senha-nova" required minlength="6">
+        </div>
+        <div class="form-group">
+          <label for="senha-confirma">Confirmar nova senha</label>
+          <input type="password" id="senha-confirma" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary">Alterar Senha</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

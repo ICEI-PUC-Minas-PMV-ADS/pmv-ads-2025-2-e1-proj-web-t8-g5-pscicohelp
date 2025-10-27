@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Página de acesso rápido à busca de instituições para a comunidade-->
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         <title>Instituições</title>
+         <style type="text/css"></style>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="stylesheet" href="index.css">
+         <link rel="stylesheet" href="/codigo-fonte/var.css">
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo-box">ATENDIMENTO PSICOLÓGICO GRATUITO</div>
+            <div class="card-container">
+                
+                    <legend>Encontrar uma Instituição</legend>
+                    <h3>Preencha os campos abaixo</h3>
+                    <div class="select-group">
+                        <form action="https://www.example.com/searches.php">
+
+                            <div class="options">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" required>
+
+                                <option value="es">ES</option>
+                                <option value="mg" selected>MG</option>
+                                <option value="rj">RJ</option>
+                                <option value="sp">SP</option>
+                                
+                            </select>
+                            </div>
+                            
+                            <div class="options">
+                            <label for="municipio">Município(s)</label>
+                            <select name="municipio" id="municipio">
+                                    <option value="selecionemunicipio">Seleceione o município</option>
+                                    <option value="belohorizonte">Belo Horizonte</option>
+                                    <option value="betim">Betim</option>
+                                    <option value="brumadinho">Brumadinho</option>
+                                    <option value="contagem">Contagem</option>
+                                    <option value="ibirite">Ibirité</option>
+                                    <option value="novalima">Nova Lima</option>
+                                    <option value="sabara">Sabará</option>
+                                    <option value="sarzedo">Sarzedo</option>
+                            </select>
+                            </div>
+
+                            <div class="options">
+
+                                <label for="faixaetaria">Faixa etária</label>
+                                <select name="faixaetaria" id="faixaetaria">
+                                    <option value="selecionefaixaetaria">Selecione a faixa etária</option>
+                                    <option value="crianca">Criança</option>
+                                    <option value="adolescente">Adolescente</option>
+                                    <option value="adulto">Adulto</option>
+                                    <option value="Idoso">Idoso</option>
+                                </select>
+                            </div>
+
+                            <div class="options">
+
+                                <label for="abordagem">Abordagem</label>
+                                <select name="abordagem" id="abordagem">
+                                    <option value="selecionebordagem">Selecione a abordagem</option>
+                                    <option value="naosei">Não sei</option>
+                                    <option value="psicanalise">Psicanálise</option>
+                                    <option value="tcc">Terapia Conginitivo-Comportamental (TCC)</option>
+                                    <option value="humanista">Terapia Humanista</option>
+                                </select>
+                            </div>
+
+                            <div class="options">
+                                <label for="prontoatendimento">Pronto Atendimento</label>
+                                <input type="radio" name="prontoatendimento" value="sim"/>Sim
+                                <input type="radio" name="prontoatendimento" value="nao"/>Não
+                            </div>
+                            <button type="submit" class="btn-submit"> Enviar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
