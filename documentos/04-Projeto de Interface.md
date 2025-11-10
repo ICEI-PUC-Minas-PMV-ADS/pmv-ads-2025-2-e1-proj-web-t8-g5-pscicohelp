@@ -25,11 +25,11 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 [Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
  
 > **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
+> - [Protótipos vs Wireframes](<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/BRpS3YCf2vJROifNfaVi91/PsicoHelp?node-id=0-1&embed-host=share" allowfullscreen></iframe>)
 >- Ferramentas:
 >> - [Pencil](https://pencil.evolus.vn/)
 >> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
+>> - [Figma](https://www.figma.com/design/nSzNCExwwIlXQVkdbXOPLi/Pscicohelp?node-id=2-2&t=71CX8YLRV9GBEt5b-1)
 
 
 

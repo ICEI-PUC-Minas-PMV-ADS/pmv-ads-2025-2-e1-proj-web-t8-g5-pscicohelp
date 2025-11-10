@@ -36,26 +36,16 @@ body {
     justify-items: start; 
     min-height: 380px; 
 } 
-.logo-box { 
-    width: clamp(220px, 50%, 360px); 
-    height: 120px; 
-    display: grid; 
-    place-items: center; 
-    border: 1.5px solid var(--border); 
-    background: transparent; 
-    border-radius: 10px; 
-    color: var(--text); 
-    letter-spacing: .5px; 
-    font-weight: 500; 
-    text-transform: lowercase; 
-} 
 .subtitle { 
     letter-spacing: .35em; 
     text-transform: uppercase; 
     font-size: 14px; 
     opacity: .9; 
 } 
-
+.logo-box {
+    width: 500px !important;
+    height: 300px !important;
+}
 /* painel com os botões à direita */ 
 .panel { 
     background: var(--card); 
