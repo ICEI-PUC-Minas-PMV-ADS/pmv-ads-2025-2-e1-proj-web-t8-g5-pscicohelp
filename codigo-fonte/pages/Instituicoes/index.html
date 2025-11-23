@@ -11,6 +11,7 @@
          <link rel="stylesheet" href="index.css">
          <link rel="stylesheet" href="/codigo-fonte/var.css">
          <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+         <script defer src="./index.js"></script>
     </head>
     <body>
         <div class="container">
@@ -20,65 +21,63 @@
                     <legend>Encontrar uma Instituição</legend>
                     <h3>Preencha os campos abaixo</h3>
                     <div class="select-group">
-                        <form action="https://www.example.com/searches.php">
+                        <form action="" id="myform">
 
                             <div class="options">
                             <label for="estado">Estado</label>
-                            <select name="estado" id="estado" required>
-
+                            <select name="estado" id="estado" onchange="mudaEstado(this)" required>
+                                <option value="selecione">Selecione um estado</option>
                                 <option value="es">ES</option>
-                                <option value="mg" selected>MG</option>
+                                <option value="mg">MG</option>
                                 <option value="rj">RJ</option>
                                 <option value="sp">SP</option>
                                 
                             </select>
+                            <span id="estado_error"></span>
                             </div>
                             
                             <div class="options">
                             <label for="municipio">Município(s)</label>
-                            <select name="municipio" id="municipio">
-                                    <option value="selecionemunicipio">Seleceione o município</option>
-                                    <option value="belohorizonte">Belo Horizonte</option>
-                                    <option value="betim">Betim</option>
-                                    <option value="brumadinho">Brumadinho</option>
-                                    <option value="contagem">Contagem</option>
-                                    <option value="ibirite">Ibirité</option>
-                                    <option value="novalima">Nova Lima</option>
-                                    <option value="sabara">Sabará</option>
-                                    <option value="sarzedo">Sarzedo</option>
+                            <select name="municipio" id="municipio" onchange="getMunicipio()">
+                                    
                             </select>
+                            <span class="error" id="municipio_error"></span>
                             </div>
 
                             <div class="options">
 
                                 <label for="faixaetaria">Faixa etária</label>
-                                <select name="faixaetaria" id="faixaetaria">
-                                    <option value="selecionefaixaetaria">Selecione a faixa etária</option>
+                                <select name="faixaetaria" id="faixaetaria" onchange="getFaixaEtaria()">
+                                    <option value="selecione">Selecione a faixa etária</option>
                                     <option value="crianca">Criança</option>
                                     <option value="adolescente">Adolescente</option>
                                     <option value="adulto">Adulto</option>
                                     <option value="Idoso">Idoso</option>
                                 </select>
+                                <span id="faixaetaria_error"></span>
                             </div>
 
                             <div class="options">
 
                                 <label for="abordagem">Abordagem</label>
-                                <select name="abordagem" id="abordagem">
-                                    <option value="selecionebordagem">Selecione a abordagem</option>
+                                <select name="abordagem" id="abordagem" onchange="getAbordagem()">
+                                    <option value="selecione">Selecione a abordagem</option>
                                     <option value="naosei">Não sei</option>
                                     <option value="psicanalise">Psicanálise</option>
                                     <option value="tcc">Terapia Conginitivo-Comportamental (TCC)</option>
                                     <option value="humanista">Terapia Humanista</option>
                                 </select>
+                                <span id="abordagem_error"></span>
                             </div>
 
                             <div class="options">
-                                <label for="prontoatendimento">Pronto Atendimento</label>
+                                <label for="prontoatendimento" >Pronto Atendimento</label>
                                 <input type="radio" name="prontoatendimento" value="sim"/>Sim
                                 <input type="radio" name="prontoatendimento" value="nao"/>Não
+                                <br>
+                            <span id="pa_error"></span>
                             </div>
-                            <button type="submit" class="btn-submit"> Enviar</button>
+                            <button type="submit" id="submit-btn" class="btn-submit"> Enviar</button>
                             </div>
                         </form>
 

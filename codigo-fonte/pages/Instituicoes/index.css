@@ -132,3 +132,8 @@ option{
 .btn-submit:active {
     transform: translateY(1px);
 }
+
+span{
+    font-size: 14px;
+    color: red;
+}
