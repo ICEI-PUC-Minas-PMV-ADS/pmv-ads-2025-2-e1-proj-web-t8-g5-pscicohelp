@@ -12,7 +12,7 @@ O problema é que essas informações ficam espalhadas e nem sempre chegam à po
 
 ## Integrantes
 
-* Luiz Alberto Ferreira Gomes
+* Paulo Roberto Nazario Catarino
 * Adriana Camurça Lima
 * Gabriel Campos Seno
 * Mariana Santos
