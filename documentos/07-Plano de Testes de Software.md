@@ -10,6 +10,5 @@
 
 |Caso de teste | Requisitos associados | Objetivo do teste | Passos | Critérios de êxito | Responsável|
 | ------------ | --------------------- | ----------------- | ------ | ------------------ | -----------|
-| CT-02: Verificar a visualização do texto “Sobre nós” | RF-002: O site deve permitir ao usuário a visualização das informações sobre os desenvolvedores. | Verificar se o texto da página aparece corretamente, assim como a logo do site. | 1. Acessar o navegador; 2. Informar o endereço web do site; 3. Abrir a página Home; 4. Clicar no botão: Sobre nós;
-5. Visualizar o texto e a logo do site. | A logo do site deverá aparecer sem nenhuma quebra na imagem, assim como o texto deverá aparecer organizado em parágrafos e justificado. | Mariana |
+| CT-02: Verificar a visualização do texto “Sobre nós” | RF-002: O site deve permitir ao usuário a visualização das informações sobre os desenvolvedores. | Verificar se o texto da página aparece corretamente, assim como a logo do site. | 1. Acessar o navegador; 2. Informar o endereço web do site; 3. Abrir a página Home; 4. Clicar no botão: Sobre nós; 5. Visualizar o texto e a logo do site. | A logo do site deverá aparecer sem nenhuma quebra na imagem, assim como o texto deverá aparecer organizado em parágrafos e justificado. | Mariana |
 
