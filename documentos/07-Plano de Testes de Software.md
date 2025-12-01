@@ -12,3 +12,7 @@
 | ------------ | --------------------- | ----------------- | ------ | ------------------ | -----------|
 | CT-02: Verificar a visualização do texto “Sobre nós” | RF-002: O site deve permitir ao usuário a visualização das informações sobre os desenvolvedores. | Verificar se o texto da página aparece corretamente, assim como a logo do site. | 1. Acessar o navegador; 2. Informar o endereço web do site; 3. Abrir a página Home; 4. Clicar no botão: Sobre nós; 5. Visualizar o texto e a logo do site. | A logo do site deverá aparecer sem nenhuma quebra na imagem, assim como o texto deverá aparecer organizado em parágrafos e justificado. | Mariana |
 
+
+|Caso de teste | Requisitos associados | Objetivo do teste | Passos | Critérios de êxito | Responsável|
+| ------------ | --------------------- | ----------------- | ------ | ------------------ | -----------|
+CT-06: Verificar carregamento de imagens das páginas| RF-006: As imagens do site devem ser carregadas corretamente, sem distorção ou quebra| Verificar se as imagens exibem corretamente em todas as páginas, sem falhas de renderização.| 1. Acessar o navegador; 2. Informar o endereço web do site; 3. Navegar por todas as páginas que possuem imagens; 4. Verificar se cada imagem carrega completamente; 5. Conferir se a proporção está correta e sem pixelização; 6. Verificar se existe texto alternativo (alt).| Todas as imagens devem carregar corretamente, com boa resolução, sem quebra, sem distorção e com atributo alt presente.| Gabriel
