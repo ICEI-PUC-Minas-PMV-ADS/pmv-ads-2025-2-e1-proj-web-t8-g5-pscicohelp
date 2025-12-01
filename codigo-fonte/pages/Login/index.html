@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Psicohelp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="../../var.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h1>Bem-vindo de volta</h1>
+        <p>Acesse sua área do paciente</p>
+      </div>
+
+      <div id="alertBox" class="alert alert-error">
+        <span id="alertMessage"></span>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">E-mail ou CPF <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="email" 
+            name="email"
+            placeholder="seu@email.com ou 000.000.000-00"
+            required
+            autocomplete="username"
+          >
+          <span class="error-message" id="email-error">Por favor, informe seu e-mail ou CPF</span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha <span class="required">*</span></label>
+          <div class="password-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password"
+              placeholder="••••••••"
+              required
+              autocomplete="current-password"
+            >
+            <button type="button" class="toggle-password" onclick="togglePassword()">
+              👁️
+            </button>
+          </div>
+          <span class="error-message" id="password-error">Por favor, informe sua senha</span>
+          <div class="forgot-password">
+            <a href="#" onclick="alert('Instruções de recuperação serão enviadas para seu e-mail cadastrado.'); return false;">Esqueceu sua senha?</a>
+          </div>
+        </div>
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Lembrar-me neste dispositivo</label>
+        </div>
+
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+
+      <div class="signup-link">
+        Não tem cadastro? <a href="../Cadastro">Faça sua inscrição</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

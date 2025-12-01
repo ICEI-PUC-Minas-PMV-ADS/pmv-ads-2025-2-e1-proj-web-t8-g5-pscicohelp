@@ -4,7 +4,8 @@
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>Psicohelp</title> 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">  
+  <script defer src="./index.js"></script>
     <link rel="stylesheet" href="/codigo-fonte/var.css">
   <!-- fonte opcional (parecida com a do slide); se quiser retirar, tudo continua funcionando --> 
   <link 
@@ -13,22 +14,20 @@ href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;6
 </head> 
 <body> 
   <main class="wrap" aria-label="Página inicial"> 
-    <!-- ESQUERDA: coloque sua imagem de logo aqui depois --> 
     <section class="brand"> 
-      <img class="logo-box" aria-label="espaco para imagem do logo" src="./assets/img/WhatsApp Image 2025-10-26 at 23.13.43(1).png"></img> 
+      <img class="logo-box" aria-label="espaco para imagem do logo" src="./assets/img/WhatsApp Image 2025-10-26 at 23.13.43(1).png" alt="Logo Psicohelp">
       <p class="subtitle">Atendimento psicológico gratuito</p> 
     </section> 
  
-    <!-- DIREITA: painel com botões --> 
     <section class="panel" aria-label="Ações principais"> 
       <div class="stack" role="navigation" aria-label="menu principal"> 
-        <a class="btn" href="./pages/Instituicoes/index.html" aria-label="Ir para Universidade ou 
-Instituição">Universidade/Instituição</a> 
-        <a class="btn" href="./pages/Usuario/index.html" aria-label="Ir para área do Usuário">Usuário</a> 
-        <a class="btn" href="./pages/inscricao/index.html" aria-label="Ir para Inscrição ou Lista de espera">Inscrição/Lista 
-de espera</a> 
-        <a class="btn" href="./pages/Acessibilidade/Index.html" aria-label="Ver informações de 
-Acessibilidade">Acessibilidade</a> 
+        <a class="btn" href="./pages/Instituicoes/index.html" aria-label="Ir para Universidade ou Instituição">Universidade/Instituição</a> 
+        
+        <!-- Botão de Usuário - controlado por JavaScript -->
+        <a class="btn" id="btnUsuario" href="./pages/Login/index.html" aria-label="Ir para área do Usuário">Usuário</a> 
+        
+        <a class="btn" href="./pages/inscricao/index.html" aria-label="Ir para Inscrição ou Lista de espera">Inscrição/Lista de espera</a> 
+        <a class="btn" href="./pages/Acessibilidade/Index.html" aria-label="Ver informações de Acessibilidade">Acessibilidade</a> 
         <a class="btn" href="./pages/Sobre/index.html" aria-label="Sobre nós">Sobre nós</a> 
       </div> 
  
@@ -36,6 +35,6 @@ Acessibilidade">Acessibilidade</a>
         <a class="social" href="#" aria-label="Instagram">⌁</a> 
       </div> 
     </section> 
-  </main> 
+  </main>
 </body> 
 </html>

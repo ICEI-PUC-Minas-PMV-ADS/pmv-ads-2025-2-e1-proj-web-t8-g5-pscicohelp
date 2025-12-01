@@ -1,0 +1,52 @@
+[
+  {
+    "id": "user_1764557404035_v3xd906x3",
+    "protocolo": "592331",
+    "dadosPessoais": {
+      "nome": "Paulo Roberto Nazario Catarino",
+      "email": "paulo041106@gmail.com",
+      "cpf": "214.321.412-42",
+      "telefone": "(23) 3211-414",
+      "telefone2": "",
+      "dataNascimento": "2004-11-05",
+      "sexo": "masculino",
+      "avatar": ""
+    },
+    "endereco": {
+      "estado": "mg",
+      "cidade": "São Gonçalo",
+      "bairro": "",
+      "cep": ""
+    },
+    "atendimento": {
+      "situacao": "lista_espera",
+      "instituicao": "",
+      "profissional": "",
+      "inicioTratamento": "",
+      "abordagem": "tcc",
+      "faixaEtaria": "adulto",
+      "urgencia": "baixa",
+      "modalidade": "online",
+      "observacoes": ""
+    },
+    "sessoes": {
+      "realizadas": 0,
+      "total": 0,
+      "faltas": 0,
+      "reagendamentos": 0,
+      "proxima": null,
+      "agendadas": [],
+      "historico": []
+    },
+    "documentos": [],
+    "avaliacoes": [],
+    "notificacoes": [],
+    "configuracoes": {
+      "receberEmails": true,
+      "receberTelefone": false,
+      "receberWhatsApp": true
+    },
+    "dataCriacao": "2025-12-01T02:50:04.035Z",
+    "ultimoAcesso": "2025-12-01T02:50:04.035Z"
+  }
+]
