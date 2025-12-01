@@ -1,48 +1,164 @@
 :root{ 
-    --bg-page: #D7DCCF;      /* verde acinzentado do fundo */ 
-    --card:    #F6F0E9;      /* creme do painel */ 
-    --border:  #CFC6BA;      /* bege da borda */ 
-    --text:    #2B2B2B;      /* cinza quase preto */ 
-} 
+    --bg-page: #D7DCCF;
+    --card:    #F6F0E9;
+    --border:  #CFC6BA;
+    --text:    #2B2B2B;
+    --accent:  #8B9A7E;
+}
 
-/* reset mínimo */ 
-* { box-sizing: border-box; } 
-html, body { height: 100%; } 
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%;
+}
+
 body { 
-    margin: 0; 
-    background: var(--bg-page); 
-    color: var(--text); 
-    font: 17px/1.4 "Cormorant Garamond", Georgia, "Times New Roman", serif; 
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
-} 
-
-.subtitle { 
-    letter-spacing: .35em; 
-    text-transform: uppercase; 
-    font-size: 14px; 
-    opacity: .9; 
-} 
+    background: var(--bg-page);
+    color: var(--text);
+    font: 18px/1.65 "Cormorant Garamond", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .wrap { 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 32px 20px; 
-    min-height: 100%; 
-    display: grid; 
-    grid-template-columns: 1fr 560px; 
-    gap: 32px; 
-    align-items: center; 
-} 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    gap: 48px;
+    align-items: center;
+}
 
+/* Seção da marca */
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.logo-box {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+}
+
+.subtitle { 
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.75;
+    color: var(--accent);
+    margin-top: 8px;
+}
+
+/* Card de conteúdo */
 .card-container {
-    background: var(--card); 
-    border-radius: 12px; 
-    padding: 28px; 
-    outline: 1.5px solid rgba(0,0,0,0.06);
-    display: grid; gap: 18px; 
+    background: var(--card);
+    border-radius: 16px;
+    padding: 42px 38px;
+    box-shadow: 
+        0 1px 3px rgba(0,0,0,0.06),
+        0 8px 24px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    color: var(--text);
+    letter-spacing: -0.02em;
 }
 
 p {
     text-align: justify;
+    margin-bottom: 20px;
+    hyphens: auto;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 968px) {
+    .wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+    
+    .brand {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card-container {
+        padding: 36px 32px;
+    }
+    
+    h1 {
+        font-size: 38px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 640px) {
+    body {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    
+    .wrap {
+        padding: 32px 20px;
+        gap: 32px;
+    }
+    
+    .logo-box {
+        max-width: 220px;
+    }
+    
+    .subtitle {
+        font-size: 12px;
+        letter-spacing: 0.3em;
+    }
+    
+    .card-container {
+        padding: 28px 24px;
+        border-radius: 12px;
+    }
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    
+    p {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrap {
+        padding: 24px 16px;
+    }
+    
+    .card-container {
+        padding: 24px 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
 }
