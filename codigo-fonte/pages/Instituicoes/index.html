@@ -27,10 +27,10 @@
                             <label for="estado">Estado</label>
                             <select name="estado" id="estado" onchange="mudaEstado(this)" required>
                                 <option value="selecione">Selecione um estado</option>
-                                <option value="es">ES</option>
-                                <option value="mg">MG</option>
-                                <option value="rj">RJ</option>
-                                <option value="sp">SP</option>
+                                <option value="ES">ES</option>
+                                <option value="MG">MG</option>
+                                <option value="RJ">RJ</option>
+                                <option value="SP">SP</option>
                                 
                             </select>
                             <span id="estado_error"></span>
@@ -49,10 +49,10 @@
                                 <label for="faixaetaria">Faixa etária</label>
                                 <select name="faixaetaria" id="faixaetaria" onchange="getFaixaEtaria()">
                                     <option value="selecione">Selecione a faixa etária</option>
-                                    <option value="crianca">Criança</option>
+                                    <option value="criança">Criança</option>
                                     <option value="adolescente">Adolescente</option>
                                     <option value="adulto">Adulto</option>
-                                    <option value="Idoso">Idoso</option>
+                                    <option value="idoso">Idoso</option>
                                 </select>
                                 <span id="faixaetaria_error"></span>
                             </div>
@@ -62,10 +62,10 @@
                                 <label for="abordagem">Abordagem</label>
                                 <select name="abordagem" id="abordagem" onchange="getAbordagem()">
                                     <option value="selecione">Selecione a abordagem</option>
-                                    <option value="naosei">Não sei</option>
-                                    <option value="psicanalise">Psicanálise</option>
-                                    <option value="tcc">Terapia Conginitivo-Comportamental (TCC)</option>
-                                    <option value="humanista">Terapia Humanista</option>
+                                    <option value="Nao sei">Não sei</option>
+                                    <option value="Psicanalise">Psicanálise</option>
+                                    <option value="Terapia Cognitivo-Comportamental">Terapia Conginitivo-Comportamental (TCC)</option>
+                                    <option value="Humanista">Terapia Humanista</option>
                                 </select>
                                 <span id="abordagem_error"></span>
                             </div>
@@ -85,5 +85,6 @@
                 
             </div>
         </div>
+        <div id="resultado-container"></div>
     </body>
 </html>

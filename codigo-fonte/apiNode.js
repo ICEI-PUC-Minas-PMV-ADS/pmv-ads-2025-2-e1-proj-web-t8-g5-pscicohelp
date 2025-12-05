@@ -3,10 +3,12 @@
 // Salva em: usuarios.json
 // ==========================================
 
+require('dotenv').config();
 const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
 const cors = require('cors');
+const mongoose = require('mongoose')
 
 const app = express();
 const PORT = 3000;
@@ -18,6 +20,18 @@ const ARQUIVO_JSON = path.join(__dirname, 'usuarios.json');
 app.use(cors());
 app.use(express.json());
 app.use(express.static('.')); // Servir arquivos estáticos
+
+//Mongodb
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log("Conectado ao banco de dados"))
+    .catch(err => console.log("Erro ao conectar com o banco de dados", err))
+
+
+//Rotas
+const instituicoesRoute = require("./routes/instituicoes");
+app.use("/api/instituicoes", instituicoesRoute)
+
+
 
 // ==========================================
 // FUNÇÕES AUXILIARES
